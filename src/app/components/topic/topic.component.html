@@ -1,0 +1,26 @@
+
+<div class="content">
+
+
+<h2>Liste des topics</h2>
+
+
+
+<div *ngFor="let topic of topics" class="posts">
+  <div class="post">
+  <h2>{{topic.title}}</h2>
+    <h3>{{topic.description}}</h3>
+    <p>{{topic.content}}</p>
+    <br>
+    <app-comment [topicId]="topic.id"></app-comment>
+
+
+</div>
+</div>
+
+
+<p>Liste des messages</p>
+
+<p>Auteur :  message : </p>
+
+  </div>

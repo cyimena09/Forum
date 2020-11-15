@@ -1,0 +1,17 @@
+<p>Liste des commentaires</p>
+
+<ul *ngFor="let comment of comments">
+  <li>{{comment.text}}</li>
+</ul>
+
+
+
+ <form class="col-8 offset-2" [formGroup]="commentForm" (ngSubmit)="onComment()">
+
+
+   <input class="form-control" type="text" placeholder="Ajouter un commentaire" id="comment" formControlName="comment">
+
+
+   <button>Poster</button>
+ </form>
+
